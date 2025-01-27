@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -78,4 +75,15 @@ class DefaultFirebaseOptions {
     storageBucket: 'fir-app-34056.firebasestorage.app',
     iosBundleId: 'com.example.fireNoteApp',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDfoJ8t6-MuzPvySWKuMQavkemR33mhZRo',
+    appId: '1:346429116503:web:7e26e71136b74c4e7e1312',
+    messagingSenderId: '346429116503',
+    projectId: 'fir-app-34056',
+    authDomain: 'fir-app-34056.firebaseapp.com',
+    storageBucket: 'fir-app-34056.firebasestorage.app',
+    measurementId: 'G-E1L64758HG',
+  );
+
 }
